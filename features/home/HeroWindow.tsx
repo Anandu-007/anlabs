@@ -1,8 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import FeaturedProjectsMobile from "@/components/hero/FeaturedProjectsMobile";
-
+import SkillsSection from "@/components/hero/SkillsSection";
 export default function HeroWindow() {
   return (
     <>
@@ -109,11 +108,11 @@ export default function HeroWindow() {
           {/* Featured */}
 
           <div>
-            <h3 className="mt-8 mb-3 text-primary text-xs uppercase tracking-[0.3em]">
-              Featured Projects
-            </h3>
+           <h3 className="mt-8 mb-5 text-primary text-xs uppercase tracking-[0.3em]">
+  Skills
+</h3>
 
-            <FeaturedProjectsMobile />
+<SkillsSection />
           </div>
         </div>
       </section>
@@ -187,13 +186,13 @@ export default function HeroWindow() {
 
         {/* Right */}
 
-        <section className="hidden lg:flex flex-col justify-center px-10">
+        <section className="hidden lg:flex flex-col pt-14 px-10">
 
-          <p className="text-primary text-xs uppercase tracking-[0.3em] mb-6">
-            Featured Projects
-          </p>
+   <p className="mb-6 text-primary text-base font-bold uppercase tracking-[0.35em]">
+  Skills
+</p>
 
-          <FeaturedProjectsMobile />
+<SkillsSection />
 
         </section>
 
