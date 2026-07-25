@@ -69,7 +69,7 @@ export default function ProjectPage({
         <div className="w-full h-56 md:h-96 overflow-hidden border border-border bg-zinc-950">
           {project.thumbnail ? (
             <img
-              src={`${IMAGE_BASE_URL}${project.thumbnail.file_path}`}
+              src={`${IMAGE_BASE_URL}/${project.thumbnail.file_path}`}
               alt={project.title}
               className="w-full h-full object-cover"
             />

@@ -25,11 +25,12 @@ export default async function ProjectsPage() {
               {/* Thumbnail */}
               <div className="h-56 bg-zinc-950 border-b border-border flex items-center justify-center overflow-hidden">
                 {project.thumbnail ? (
-                  <img
-                    src={`${IMAGE_BASE_URL}${project.thumbnail.file_path}`}
-                    alt={project.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
+             <img
+  src={`${IMAGE_BASE_URL}/${project.thumbnail!.file_path}`}
+  alt={project.title}
+  className="w-full h-full object-cover"
+  
+/>
                 ) : (
                   <FileTerminal className="h-14 w-14 text-primary" />
                 )}

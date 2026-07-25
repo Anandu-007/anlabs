@@ -70,13 +70,20 @@ export default function TerminalPage() {
     } else if (trimmedCmd === "services") {
       output = <div className="text-primary animate-pulse py-1">Loading system modules...</div>;
       setTimeout(() => router.push("/services"), 800);
-    } else if (trimmedCmd === "contact") {
-      output = <div className="text-primary animate-pulse py-1">Executing connect.exe...</div>;
-      setTimeout(() => router.push("/contact"), 800);
-    } else if (trimmedCmd === "resume") {
-      output = <div className="text-primary animate-pulse py-1">Downloading resume.pdf...</div>;
-      setTimeout(() => window.open("/resume.pdf", "_blank"), 800);
-    } else {
+   } else if (trimmedCmd === "resume") {
+  output = (
+    <div className="text-primary animate-pulse py-1">
+      Downloading resume.pdf...
+    </div>
+  );
+
+  const url = `${process.env.NEXT_PUBLIC_API_URL}/files/resume`;
+  console.log("Resume URL:", url);
+
+  setTimeout(() => {
+    window.open(url, "_blank");
+  }, 800);
+} else {
       output = <div className="text-red-400 py-1">Command not found: {trimmedCmd}</div>;
     }
 

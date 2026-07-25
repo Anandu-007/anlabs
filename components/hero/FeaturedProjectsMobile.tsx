@@ -120,13 +120,13 @@ function Card({
         }`}
       >
         <div className={desktop ? "h-52" : "h-28"}>
-          {project.thumbnail ? (
-            <img
-              src={`${IMAGE_BASE_URL}${project.thumbnail.file_path}`}
-              alt={project.title}
-              className="w-full h-full object-cover"
-            />
-          ) : (
+        {project.thumbnail ? (
+  <img
+    src={`${IMAGE_BASE_URL}/${project.thumbnail.file_path}`}
+    alt={project.title}
+    className="w-full h-full object-cover"
+  />
+) : (
             <div className="w-full h-full flex items-center justify-center bg-zinc-950">
               <FileTerminal className="h-10 w-10 text-primary" />
             </div>
