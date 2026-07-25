@@ -12,11 +12,11 @@ const fadeUp: Variants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: {
-      type: "spring",
-      stiffness: 100,
-      damping: 20,
-    },
+   transition: {
+  type: "spring" as const,
+  stiffness: 100,
+  damping: 20,
+},
   },
 };
 
@@ -32,8 +32,8 @@ const staggerContainer: Variants = {
   },
 };
 
-const heroTransition: Transition = {
-  type: "spring",
+const heroTransition = {
+  type: "spring" as const,
   stiffness: 50,
   damping: 20,
   delay: 0.4,
