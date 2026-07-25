@@ -20,8 +20,6 @@ export default function ApplicationShell({
   const folders = [
     { name: "Home", href: "/" },
     { name: "Projects", href: "/projects" },
-    // { name: "Blog", href: "/notes" },
-    // { name: "Services", href: "/services" },
     { name: "Contact", href: "/contact" },
   ];
 
@@ -84,27 +82,6 @@ export default function ApplicationShell({
             {downloadingResume ? "Downloading..." : "Resume.pdf"}
           </span>
         </button>
-
-        {/* <Link
-          href="/terminal"
-          onClick={() => setMobileMenuOpen(false)}
-          className={`flex items-center gap-4 p-3 group transition-none ${
-            pathname === "/terminal"
-              ? "bg-primary text-black"
-              : "hover:bg-primary hover:text-black text-white"
-          }`}
-        >
-          <Terminal
-            className={`h-8 w-8 ${
-              pathname === "/terminal"
-                ? "text-black"
-                : "text-primary group-hover:text-black"
-            } fill-current`}
-          />
-          <span className="text-sm font-bold tracking-wider uppercase">
-            Terminal.exe
-          </span>
-        </Link> */}
       </div>
 
       <div className="shrink-0 p-4 border-t border-primary text-xs text-primary bg-black">
@@ -121,12 +98,10 @@ export default function ApplicationShell({
   return (
     <div
       className="
-        w-screen
-        h-screen
-        md:w-full
-        md:max-w-[1400px]
-        md:h-full
-        md:max-h-[900px]
+       fixed
+inset-0
+w-full
+h-full
         bg-black
         border
         border-primary
@@ -191,7 +166,7 @@ export default function ApplicationShell({
       </div>
 
       <div className="flex flex-1 overflow-hidden relative">
-        <div className="hidden md:block w-72 shrink-0">
+        <div className="hidden md:block w-64 shrink-0">
           <Sidebar />
         </div>
 
@@ -201,7 +176,14 @@ export default function ApplicationShell({
           </div>
         )}
 
-        <div className="flex-1 relative overflow-y-auto overflow-x-hidden bg-black">
+        <div
+className="
+flex-1
+relative
+overflow-auto
+bg-black
+"
+>
           {children}
         </div>
       </div>

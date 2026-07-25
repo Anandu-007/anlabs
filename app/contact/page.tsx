@@ -49,7 +49,7 @@ export default function ContactPage() {
   return (
     <Window title="C:\\ANLABS\\CONTACT">
       <div className="p-6 md:p-10 h-full overflow-y-auto">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-5xl pr-8 lg:pr-12">
 
           <h1 className="text-4xl font-bold text-white">
             CONTACT

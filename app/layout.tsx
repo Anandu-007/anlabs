@@ -23,8 +23,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geist.className} bg-black text-white w-screen h-screen overflow-hidden relative md:flex md:items-center md:justify-center md:p-8`}
-      >
+className={`${geist.className} bg-black text-white min-h-screen relative`}
+>
         <BackgroundRain />
 
         <ApplicationShell>{children}</ApplicationShell>

@@ -46,7 +46,7 @@ export default function HeroWindow() {
 
       {/* ================= MOBILE ================= */}
 
-      <section className="lg:hidden h-full bg-black px-5 py-5">
+      <section className="lg:hidden  bg-black px-5 py-5">
         <div className="h-full flex flex-col justify-between">
 
           {/* Hero */}
@@ -120,7 +120,7 @@ export default function HeroWindow() {
 
       {/* ================= DESKTOP ================= */}
 
-      <div className="hidden lg:grid h-full lg:grid-cols-[55%_45%] bg-black">
+      <div className="hidden lg:grid  lg:grid-cols-[55%_45%] bg-black">
 
         {/* Left */}
 
