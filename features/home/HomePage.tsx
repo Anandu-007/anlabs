@@ -1,7 +1,7 @@
 import AppShell from "@/components/layout/AppShell";
 
 import Hero from "./components/Hero";
-import Projects from "./sections/Projects";
+// import Projects from "./sections/Projects";
 import Focus from "./sections/Focus";
 import Contact from "./sections/Contact";
 
@@ -14,7 +14,7 @@ export default function HomePage() {
         </div>
         
         <div className="order-2 md:order-3">
-          <Projects />
+          {/* <Projects /> */}
         </div>
 
         <div className="order-3 md:order-2">
