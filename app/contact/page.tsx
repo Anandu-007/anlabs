@@ -23,7 +23,7 @@ const contacts = [
     title: "PHONE",
     value: "+91 8590576306",
     description: "Call directly",
-    href: "tel:+91XXXXXXXXXX",
+    href: "tel:+918590576306",
     icon: Phone,
     action: "CALL",
   },
@@ -39,7 +39,7 @@ const contacts = [
     title: "LINKEDIN",
     value: "linkedin.com/in/yourusername",
     description: "Professional Profile",
-    href: "https://linkedin.com/in/yourusername",
+    href: "https://www.linkedin.com/in/anandu-t-v-556142248/",
     icon: FaLinkedin,
     action: "VISIT",
   },
@@ -76,21 +76,21 @@ export default function ContactPage() {
                   rel="noopener noreferrer"
                   className="group border border-border hover:border-primary transition-all duration-300 bg-zinc-950 hover:bg-black p-6"
                 >
-                  <div className="flex items-center justify-between">
+                  <div className="flex items-start justify-between gap-4">
 
-                    <div className="flex items-center gap-5">
+                    <div className="flex items-start gap-5 flex-1 min-w-0">
 
                       <div className="w-16 h-16 border border-border group-hover:border-primary flex items-center justify-center transition-colors">
                         <Icon className="w-8 h-8 text-primary" />
                       </div>
 
-                      <div>
+                      <div className="min-w-0 flex-1">
 
                         <p className="text-xs tracking-[0.25em] text-primary font-mono">
                           {contact.title}
                         </p>
 
-                        <h2 className="text-xl text-white font-semibold mt-2">
+                        <h2 className="text-xl text-white font-semibold mt-2 break-all">
                           {contact.value}
                         </h2>
 

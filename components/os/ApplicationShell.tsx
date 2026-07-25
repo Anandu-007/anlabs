@@ -116,9 +116,12 @@ h-full
       <div className="flex items-center justify-between bg-black border-b border-primary px-3 py-1 shrink-0">
         <div className="flex items-center gap-3">
           <Terminal className="h-4 w-4 text-primary" />
-          <span className="text-primary font-bold text-sm">
-            ANLABS.EXE
-          </span>
+         <Link
+    href="/"
+    className="text-primary font-bold text-sm hover:underline"
+>
+    ANLABS.EXE
+</Link>
         </div>
 
         <div className="flex items-center gap-2">
